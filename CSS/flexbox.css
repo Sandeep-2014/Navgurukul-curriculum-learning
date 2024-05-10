@@ -1,0 +1,44 @@
+#container {
+    height: 500px;
+    width: 60%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex; 
+    /* by defaul flex direction will be raw*/
+    flex-direction: row;
+    justify-content: flex-start;  
+    /* use flex-start, flex-end, center when we are using these option comment out below propert justify-content*/
+    /* justify-content: space-around;  */
+    /* (i) apace- between ander div ke bich me equally space deta hai , (ii) space-around sabhi div me equal sapce deta hai uske sath sath start aur end me un sabhi div ka adha space satrt aur end me aa jata hai, (iii) space-evenly sabbhi div me equal sapce dene ke sath sath satrt aur end me bhi same eqal sapce deta hai*/
+    /* flex-wrap: wrap; */
+    /* align-items: baseline; */
+    /* align-content: flex-start; */
+}
+
+#red {
+    align-self: flex-start;
+    /* flex-basis: 50px; */
+    /* flex-grow: 1; */
+    /* max-width: 400px; */
+    flex-shrink: 1;
+}
+
+#blue {
+    /* align-self: flex-end; */
+    /* flex-basis: 400px; */
+    /* flex-grow: 2; */
+    flex-shrink: 3;
+}
+
+h1 {
+     text-align: center;
+}
+
+#container div {
+    height: 100px;
+    width: 300px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}

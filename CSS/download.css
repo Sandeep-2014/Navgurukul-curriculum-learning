@@ -1,0 +1,101 @@
+/* this is a universal selector the style we will give in  the universal selector it will style or do changes in whole page. but we dont use universal selector most */
+* {
+    font-family: 'Courier New';
+    /* background-color: blue; */
+}
+
+/* element selectors */
+
+h1,h3 {
+    color: #b92b27;
+}
+
+/* id selector */
+#login {
+    background-color: white;
+}
+#signup {
+    background-color: #b92b27;
+    color: white;
+}
+#myId p {
+    color: green;
+}
+
+/* class selector */
+.upvote{
+    background-color: green;
+    color: aliceblue;
+}
+
+/* decendent selector */
+.post a {
+    color: purple;
+    background-color: yellow;
+}
+
+nav ul li {
+    color: hotpink;
+}
+nav ul li a {
+    color: red;
+}
+
+/* adjustment sibiling combination: heading3 that comes immediately after any paragraph*/
+p + h3 {
+    text-decoration: underline;
+}
+.upvote + button {
+    background-color: cornflowerblue;
+    color: darkblue;
+}
+
+/* child combinator ex :- select all buttons which are direct children of spans */
+div > input {
+    background-color: darksalmon;
+}
+
+/* attribute selector:  selects elements based on the presence or value of a given attribute */
+input[type="text"] {
+    color: green;
+}
+input[type="password"] {
+    color: red;
+}
+input[type] {
+    background-color: ghostwhite;
+}
+/*  */
+button:hover {
+    background-color: black;
+    color: white;
+}
+h3:hover {
+    text-decoration: none;
+}
+button:active {
+    background-color: hotpink;
+    color: black;
+}
+p:active {
+    font-weight: bold;
+    color: green;
+}
+input[type="radio"]:checked + label {
+    color: red;
+    font-weight: bold;
+}
+.post:nth-of-type(2) {
+    background-color: blanchedalmond;
+}
+
+/* psedo elements */
+h1::first-letter {
+    color: black;
+}
+p::first-line {
+    color: red;
+}
+p::selection {
+    background-color: yellow;
+}
